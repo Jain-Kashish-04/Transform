@@ -64,7 +64,9 @@
 				background-color:gray;
 				width:15px;
 				height:15px;
-				
+				position:absolute;
+				top:30%;
+				border:1px solid white;
 			}
 			
 			
@@ -81,6 +83,9 @@
 				width:25px;
 				height:25px;
 				background:yellow;
+				position:absolute;
+				top:30%;
+				border:1px solid white;
 			}
 			
 			
@@ -92,28 +97,32 @@
 				width:330px;
 				height:330px;
 				animation:rotateOrbit 8s linear infinite;
+				
 			}
-			
+			.earth{
+				position:absolute;
+				top:40%;
+			}
 			
 			
 
 			/* Moon */
 			.moon-orbit{
-				position:absolute;
 				width:70px;
 				height:70px;
-				
-				transform:translate(-50%,-50%);
-				animation:rotateOrbit 5s linear infinite;
+				/*transform:translate(-30%,-80%);*/
+				animation:rotateOrbit 7s linear infinite;
+				position:relative;
 			}
 			.moon{
-				position:absolute;
 				width:10px;
 				height:10px;
-				background:white;
-				top:50%;
 				border-radius:50%;
-			
+				background-color:white;
+				border-radius:50%;
+				top:20%;
+				position:absolute;
+				
 			}
 			
 			
@@ -130,10 +139,11 @@
 				width:22px; 
 				height:22px;
 				background:red;
+				position:absolute;
+				top:32%;
+				border:1px solid white;
 			}
-			
-			
-			
+
 			
 			
 
@@ -147,12 +157,10 @@
 				width:44px;
 				height:44px;
 				background:orange;
+				position:absolute;
+				top:30%;
+				border:1px solid white;
 			}
-
-
-
-
-
 
 
 
@@ -161,11 +169,15 @@
 				width:570px;
 				height:570px;
 				animation:rotateOrbit 18s linear infinite;
+				
 			}
 			.saturn{ 
 				width:40px;
 				height:40px;
 				background:gold;
+				position:absolute;
+				top:32%;
+				border:1px solid white;
 			}
 			
 			
@@ -176,13 +188,16 @@
 				width:640px;
 				height:640px;
 				animation:rotateOrbit 22s linear infinite;
+				position:relative;
+				
 			}
 			.uranus{ 
 				width:35px;
 				height:35px;
 				background:lightblue;
-				position:relative;
-				border:1px solid red;
+				position:absolute;
+				top:35%;
+				border:1px solid white;
 			}
 			
 			
@@ -196,38 +211,50 @@
 				<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\Transform\images\sun.png" width="120px" height="120px">
 			</div>
 
+
+
 			<div class="orbit mercury-orbit">
 				<div class="planet mercury"> 
 					
 				</div>
 			</div>
 
+
+
 			<div class="orbit venus-orbit">
 				<div class="planet venus"></div>
 			</div>
 
+
+
 			<div class="orbit earth-orbit">
-			
 				<div class="planet earth">
-					<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\Transform\images\earth.jpeg" width="26px" height="30px" style="border-radius:50%">
+					<img src="C:\Users\Kashish\OneDrive\Desktop\CSS versatile\Transform\images\earth.jpeg" width="30px" height="30px" style="border-radius:50%; border:1px solid white;">
 					<div class="moon-orbit">
 						<div class="moon"></div>
 					</div>
 				</div>
-				
 			</div>
+
+
 
 			<div class="orbit mars-orbit">
 				<div class="planet mars"></div>
 			</div>
 
+
+
 			<div class="orbit jupiter-orbit">
 				<div class="planet jupiter"></div>
 			</div>
 
+
+
 			<div class="orbit saturn-orbit">
 				<div class="planet saturn"></div>
 			</div>
+
+
 
 			<div class="orbit uranus-orbit">
 				<div class="planet uranus"></div>
