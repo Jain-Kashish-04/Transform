@@ -88,46 +88,57 @@
 				border:1px solid white;
 			}
 			
-			
-			
-			
+						
 
+									
 			/* Earth */
 			.earth-orbit{ 
 				width:330px;
 				height:330px;
 				animation:rotateOrbit 8s linear infinite;
-				
 			}
+
+			
 			.earth{
 				position:absolute;
-				top:40%;
+				top:30%;
+				transform:translateY(-50%);
+				width:30px;
+				height:30px;
 			}
-			
-			
 
-			/* Moon */
+			
 			.moon-orbit{
-				width:70px;
-				height:70px;
-				/*transform:translate(-30%,-80%);*/
-				animation:rotateOrbit 7s linear infinite;
-				position:relative;
+				position:absolute;
+				width:60px;
+				height:60px;
+				top:50%;
+				left:50%;
+				transform:translate(-50%, -50%);
+				border-radius:50%;
+				animation:rotateMoon 3s linear infinite;
 			}
+
+			
 			.moon{
 				width:10px;
 				height:10px;
+				background:white;
 				border-radius:50%;
-				background-color:white;
-				border-radius:50%;
-				top:20%;
 				position:absolute;
-				
+				top:50%;
+				left:0;
+				transform:translateY(-50%);
 			}
+
 			
+			@keyframes rotateMoon{
+				0%{ transform:translate(-50%, -50%) rotate(0deg); }
+				100%{ transform:translate(-50%, -50%) rotate(360deg); }
+			}
+						
 			
-			
-			
+
 
 			/* Mars */
 			.mars-orbit{ 
